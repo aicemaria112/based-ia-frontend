@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Envío</title>
+    <style>
+        .tracking-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
+
+        .timeline {
+            position: relative;
+            height: 5px;
+            background: rgba(255,255,255,0.1);
+            margin: 4rem 0;
+        }
+
+        .progress {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
+            animation: progress 2s ease-out;
+        }
+
+        .tracking-steps {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tracking-map {
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 25px;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracking-container">
+        <div class="timeline">
+            <div class="progress"></div>
+        </div>
+        
+        <div class="tracking-steps">
+            <div class="step">
+                <div class="step-icon">📦</div>
+                <p>Preparación</p>
+                <small>15 Oct</small>
+            </div>
+            <div class="step">
+                <div class="step-icon">✈️</div>
+                <p>En Tránsito</p>
+                <small>17 Oct</small>
+            </div>
+            <div class="step">
+                <div class="step-icon">🚚</div>
+                <p>Reparto</p>
+                <small>19 Oct</small>
+            </div>
+        </div>
+
+        <div class="tracking-map">
+            <!-- Mapa interactivo aquí -->
+        </div>
+    </div>
+</body>
+</html>
